@@ -168,6 +168,33 @@
   .round-item.final .round-tag{ color:var(--gold); }
   .round-item.final .round-tag span{ color:var(--gold); }
 
+  /* ===== SCHEDULE ===== */
+  .schedule-heading{
+    font-size:13px; font-weight:700; letter-spacing:0.03em; color:var(--chalk);
+    margin-top:32px; padding-top:24px; border-top:1px solid var(--line);
+  }
+  .schedule-list{ display:flex; flex-direction:column; gap:1px; border-radius:14px; overflow:hidden; border:1px solid var(--line); margin-top:14px; }
+  .schedule-item{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    background:var(--ink-2); padding:15px 16px;
+  }
+  .schedule-item.highlight{ background:linear-gradient(135deg, rgba(227,50,44,0.14), rgba(227,50,44,0.04)); }
+  .schedule-day{ font-size:14px; font-weight:700; color:var(--chalk); }
+  .schedule-class{ font-size:12.5px; color:var(--chalk-faint); margin-top:2px; }
+  .schedule-time{
+    flex:none; font-family:"Arial Narrow", Arial, sans-serif; font-weight:800;
+    font-size:14px; color:var(--red); white-space:nowrap; text-align:right;
+  }
+  .schedule-note{ font-size:12.5px; color:var(--chalk-faint); margin-top:12px; line-height:1.5; }
+
+  .info-banner{
+    display:flex; align-items:flex-start; gap:12px;
+    background:var(--ink-2); border:1px solid var(--line); border-radius:14px;
+    padding:16px 16px; margin-top:24px;
+  }
+  .info-banner svg{ flex:none; width:18px; height:18px; margin-top:2px; color:var(--chalk-faint); }
+  .info-banner p{ font-size:13px; line-height:1.55; color:var(--chalk-dim); }
+
   /* ===== DONATION ===== */
   .donate-card{
     background:linear-gradient(155deg, var(--ink-2), var(--ink-3));
@@ -257,6 +284,8 @@
   }
   .closing-title .accent{ color:var(--red); }
   .closing-text{ font-size:14.5px; color:var(--chalk-dim); max-width:400px; margin:0 auto; line-height:1.6; }
+  .closing-signoff{ font-size:14.5px; color:var(--chalk); margin:24px auto 0; line-height:1.7; }
+  .closing-signoff b{ color:var(--red); font-weight:700; }
 
   /* ===== FOOTER ===== */
   .footer{ padding:30px 0 44px; text-align:center; border-top:1px solid var(--line); }
@@ -322,6 +351,56 @@
       <div class="round-item final">
         <div class="round-tag">FINAL<span>04</span></div>
         <div class="round-body">It's <b>last person standing</b> — the challenge ends when the final participant completes their last push-up.</div>
+      </div>
+
+      <div class="schedule-heading">This Week's Challenge Classes</div>
+      <div class="schedule-list">
+        <div class="schedule-item">
+          <div>
+            <div class="schedule-day">Monday, Wednesday & Friday</div>
+            <div class="schedule-class">Morning Classes</div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div>
+            <div class="schedule-day">Monday</div>
+            <div class="schedule-class">Advanced Class</div>
+          </div>
+        </div>
+        <div class="schedule-item highlight">
+          <div>
+            <div class="schedule-day">Tuesday</div>
+            <div class="schedule-class">All Levels</div>
+          </div>
+          <div class="schedule-time">5:00pm</div>
+        </div>
+        <div class="schedule-item highlight">
+          <div>
+            <div class="schedule-day">Wednesday</div>
+            <div class="schedule-class">All Levels</div>
+          </div>
+          <div class="schedule-time">6:30pm</div>
+        </div>
+        <div class="schedule-item highlight">
+          <div>
+            <div class="schedule-day">Thursday</div>
+            <div class="schedule-class">All Levels</div>
+          </div>
+          <div class="schedule-time">5:00pm</div>
+        </div>
+        <div class="schedule-item highlight">
+          <div>
+            <div class="schedule-day">Saturday</div>
+            <div class="schedule-class">All Levels</div>
+          </div>
+          <div class="schedule-time">8:00am</div>
+        </div>
+      </div>
+      <p class="schedule-note">Jump into any of these sessions to take part — no need to sign up in advance.</p>
+
+      <div class="info-banner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <p>As part of the fundraiser, we may capture photos and videos during these classes to help share the message and raise awareness on social media.</p>
       </div>
     </div>
   </section>
@@ -404,7 +483,10 @@
   <section class="closing">
     <div class="wrap">
       <h2 class="closing-title">Train together.<br><span class="accent">Support</span> each other.</h2>
-      <p class="closing-text">Come along to one of our challenge classes this June, get involved in the push-ups, and help us turn Courtney's effort into a bigger donation for mental health support.</p>
+      <p class="closing-text">More importantly, we encourage everyone to use the week as an opportunity to have positive conversations around mental health. Training can be a powerful tool for managing stress, building resilience, and supporting overall wellbeing — but it's also important to remember that asking for help is a sign of strength.</p>
+      <p class="closing-text" style="margin-top:14px;">Whether it's checking in with a teammate, sharing your own experience, or simply being open to conversations, every small action helps build a stronger and more supportive community.</p>
+      <p class="closing-text" style="margin-top:14px;">Thank you for being part of what makes Urban Muaythai special. We can't wait to see everyone get involved this week and make a meaningful impact together.</p>
+      <p class="closing-signoff">See you on the mats,<br><b>Urban Muay Thai</b></p>
     </div>
   </section>
 
